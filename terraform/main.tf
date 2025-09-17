@@ -1,17 +1,17 @@
 # Setup azurerm as a state backend
 terraform {
   backend "azurerm" {
-    resource_group_name  = "<RESOURCE_GROUP_NAME>"
-    storage_account_name = "<STORAGE_ACCOUNT_NAME>" # Provide Storage Account name, where Terraform Remote state is stored
-    container_name       = "<CONTAINER_NAME>"
-    key                  = "<STORAGE_ACCOUNT_KEY>"
+    resource_group_name  = "rgkafkahw1"
+    storage_account_name = "sakafkahw1" # Provide Storage Account name, where Terraform Remote state is stored
+    container_name       = "contkafkahw1"
+    key                  = "<YOUR_STORAGE_ACCOUNT_KEY>"
   }
 }
 
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
   features {}
-  subscription_id = "<SUBSCRIPTION_ID>"
+  subscription_id = "<YOUR_AZURE_SUBSCRIPTION_ID>"
 }
 
 locals {
@@ -91,7 +91,7 @@ resource "azurerm_kubernetes_cluster" "bdcc" {
   default_node_pool {
     name       = "default"
     node_count = 1
-    vm_size    = "Standard_D3_v2"
+    vm_size    = "Standard_D4s_v3"
   }
 
   identity {
