@@ -67,7 +67,8 @@ curl -s -X POST -H "Content-Type:application/json" --data @azure-source-cc.json 
 ### Now you can verify data processing via Control Center http://localhost:9021
 <img width="582" height="680" alt="image" src="https://github.com/user-attachments/assets/ea14eea8-310c-4924-ae15-7f2cfb6f9147" /> <br>
 <img width="1386" height="930" alt="image" src="https://github.com/user-attachments/assets/4203bd57-26d6-40e7-a969-528c7237d7ff" /> <br>
-<img width="1373" height="767" alt="image" src="https://github.com/user-attachments/assets/1fdb02b0-af56-4e0a-b927-91c0945c5aea" /> <br>
+Verify if date_time field is masked!
+<img width="1435" height="788" alt="image" src="https://github.com/user-attachments/assets/76d78e09-c13b-4db4-81a8-0d91743198de" /> <br>
 <img width="706" height="534" alt="image" src="https://github.com/user-attachments/assets/0d1d8f40-fc89-4d00-bd41-c2961f66e035" />
 
 
