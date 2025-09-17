@@ -13,7 +13,7 @@
     "azblob.retry.retries": "3",
     "transforms": "maskDate",
     "transforms.maskDate.type": "org.apache.kafka.connect.transforms.MaskField$Value",
-    "transforms.maskDate.fields": "date",
+    "transforms.maskDate.fields": "date_time",
     "transforms.maskDate.replacement": "0000-00-00 00:00:00"
   }
 }
